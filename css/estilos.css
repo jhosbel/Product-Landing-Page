@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: #a4a4a4;
+    background: url(../Imagenes/fondo-snk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 2px 2px #1a1818;
+}
+
+/*HEADER-----------------------------------------------------------------------------*/
+
+
+header {
+    background: rgba(164, 164, 164, 0.5);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 5px 0px #848484;
+    margin-top: 0px;
+}
+
+.nav-link {
+    background-color: rgb(66, 66, 66, 0.8);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+header ul li {
+    padding: 10px 20px 10px;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header ul {
+    display: flex;
+}
+
+.logo-titulo {
+    padding: 5px 25px 10px;
+    margin-right: auto;
+}
+
+/*HEADER-----------------------------------------------------------------------------*/
+
+/*CONTENIDO--------------------------------------------------------------------------*/
+
+.fondo {
+    width: 100vw;
+    height: auto;
+    margin: 100px auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.correo {
+    text-align: center;
+    margin: auto;
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.email {
+    padding: 3px;
+}
+
+.boton {
+    padding: 5px 10px;
+}
+
+#envios {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#envios div {
+    display: flex;
+}
+
+.iconos-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+.video-you {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cajas-all {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.cajas-vol {
+    border: 2px solid #000000;
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.img-vol {
+    width: 100%;
+}
+
+.correo, #envios, .cajas-vol {
+    background-color: rgba(164, 164, 164, 0.5);
+}
+
+/*CONTENIDO--------------------------------------------------------------------------*/
+
+/*FOOTER-----------------------------------------------------------------------------*/
+
+footer {
+    background: rgb(133, 133, 133, 0.5);
+    padding: 25px;
+    text-align: right;
+    margin: 0px;
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+}
+
+footer ol li {
+    list-style: none;
+    float: right;
+    padding: 0px 10px 0px;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width:800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-titulo {
+        margin: auto;
+    }
+}
