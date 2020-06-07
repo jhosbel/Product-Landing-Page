@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: cursive;
+    scroll-behavior: smooth;
+    scroll-margin-top: 120px;
 }
 
 body {
     background-color: #a4a4a4;
-    background: url(../Imagenes/fondo-snk.png);
+    background: url(../img/fondo-snk.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -142,6 +144,10 @@ header ul {
     background-color: rgba(164, 164, 164, 0.5);
 }
 
+.boton-vol {
+    font-size: 25px;
+}
+
 /*CONTENIDO--------------------------------------------------------------------------*/
 
 /*FOOTER-----------------------------------------------------------------------------*/
@@ -167,12 +173,118 @@ footer ol li a {
     color: #ffffff;
 }
 
+/*------------------------------------------@media Query----------------------------------------*/
+
 @media (max-width:800px) {
+
+    * {
+        scroll-margin-top: 160px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
     }
     .logo-titulo {
         margin: auto;
+    }
+    .cajas-all {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cajas-vol {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    .fondo {
+        margin: 0px auto;
+    }
+    .correo {
+        width: 50%;
+    }
+    #envios {
+        width: 90%;
+        height: 50%;
+    }
+    .caja-ico {
+        width: 25%;
+        height: 25%;
+    }
+    #envios div {
+        display: inline;
+        justify-content: center;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ol li {
+        float: none;
+    }
+    footer ol li a {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    * {
+        scroll-margin-top: 160px;
+    }
+
+    #envios {
+        width: 141%;
+        height: 50%;
+    }
+
+    .correo {
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .cajas-all {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+    }
+
+    .cajas-vol {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    * {
+        scroll-margin-top: 160px;
+    }
+
+    .correo {
+        width: 150%;
+        margin-left: 20%;
+    }
+
+    #envios {
+        width: 189%;
+        height: 50%;
+    }
+
+    .cajas-all {
+        margin-left: 15%;
+    }
+
+    .cajas-vol {
+        width: 150%;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-left: 5%;
+        margin-right: 25%;
     }
 }
